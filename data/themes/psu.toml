@@ -1,0 +1,18 @@
+# Theme metadata
+name = "PSU"
+
+# Is theme light or dark?
+light = true
+
+# Primary
+primary = "#283f7b"
+
+# Menu
+menu_primary = "#262c3a" # 500
+menu_text = "#eee"
+menu_text_active = "#3398dd" # A100
+menu_title = "#eee"
+
+# Home sections
+home_section_odd = "#F8FAFD"
+home_section_even = "#F0F3Fb"
