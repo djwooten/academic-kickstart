@@ -89,7 +89,7 @@ contact_links = [
 #  {icon = "envelope", icon_pack = "fas", name = "Email", link = "mailto:dwooten@psu.edu"},
 #  {icon = "twitter", icon_pack = "fab", name = "DM Me", link = "https://twitter.com/Twitter"},
 #  {icon = "skype", icon_pack = "fab", name = "Skype Me", link = "skype:echo123?call"},
-#  {icon = "keybase", icon_pack = "fab", name = "Chat on Keybase", link = "https://keybase.io/"},
+  {icon = "linkedin", icon_pack = "fab", name = "Connect on LinkedIn", link = "https://www.linkedin.com/in/wootendavid/"},
 #  {icon = "comments", icon_pack = "fas", name = "Discuss on Forum", link = "https://discourse.gohugo.io"},
   # {icon = "telegram", icon_pack = "fab", name = "Telegram Me", link = "https://telegram.me/@Telegram"},
   ]
