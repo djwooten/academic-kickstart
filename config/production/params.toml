@@ -69,8 +69,8 @@ time_format = "3:04 PM"
 # Enter contact details (optional). To hide a field, clear it to "".
 email = "dwooten@psu.edu"
 phone = ""
-address = """<b>Mail:</b> Davey Lab 104, Box 5<br>
-             <b>Office:</b> Davey Lab 122<br>
+address = """<b>Mail:</b> 104 Davey Lab, Box 5<br>
+             <b>Office:</b> 122 Davey Lab<br>
              The Pennsylvania State University<br>
              University Park, PA 16802, USA"""
 
