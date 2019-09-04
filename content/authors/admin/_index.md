@@ -18,7 +18,7 @@ organizations:
   url: "http://www.phys.psu.edu/people/dzw347"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include mathematical modeling in systems biology, plants, cancer and drug synergy.
+bio: I am a mathematical and computational systems biologist doing research at the interface of theory and data. I have applied my work in cancer, plants, and yeast.
 
 interests:
 - Systems and Network Biology
