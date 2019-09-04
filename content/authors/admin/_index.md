@@ -79,4 +79,4 @@ email: ""
 
 I am interested in bridging the gap between mathematical/computational models and biological data. My research focuses primarily on mathematical modeling and control of poorly constrained biological networks, drug combination synergy, and multiscale models coupling intracellular and environmental dynamics. I have developed and applied approaches and models toward understanding cancer control, plant signaling, and yeast growth.
 
-I earned my in Cancer Biology at Vanderbilt University under the guidance of [Vito Quaranta](https://lab.vanderbilt.edu/quarantalab/), and am currently a postdoctoral scholar with [Réka Albert](https://www.ralbert.me) in the Department of Physics at Pennsylvania State University.
+I earned my PhD in Cancer Biology at Vanderbilt University under the guidance of [Vito Quaranta](https://lab.vanderbilt.edu/quarantalab/), and am currently a postdoctoral scholar with [Réka Albert](https://www.ralbert.me) in the Department of Physics at Pennsylvania State University.
