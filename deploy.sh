@@ -12,7 +12,7 @@ hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
 cd public
 
 # Add changes to git.
-git add .
+git add -A
 
 # Commit changes.
 msg="rebuilding site $(date)"
@@ -25,7 +25,7 @@ git commit -m "$msg"
 git push origin master
 
 cd ..
-git add .
+git add -A
 msg="rebuilding site $(date)"
 if [ -n "$*" ]; then
 	msg="$*"
