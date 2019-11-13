@@ -21,6 +21,7 @@ organizations:
 bio: I am a mathematical and computational systems biologist doing research at the interface of theory and data. I have applied my work in cancer, plants, and yeast.
 
 interests:
+- Quantitative Systems Pharmacology
 - Systems and Network Biology
 - Dynamics of Complex and Multiscale Systems
 - Biological Control Theory
