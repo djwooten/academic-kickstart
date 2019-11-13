@@ -22,7 +22,7 @@ bio: I am a mathematical and computational systems biologist doing research at t
 
 interests:
 - Quantitative Systems Pharmacology
-- Systems and Network Biology
+- Data Driven Network Biology
 - Dynamics of Complex and Multiscale Systems
 - Biological Control Theory
 - Drug Combination Synergy
