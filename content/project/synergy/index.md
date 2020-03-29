@@ -40,3 +40,5 @@ url_video: ""
 slides: ""
 ---
 Many diseases require combinations of multiple drugs for effective treatment. I am interested in identifying, quantifying, and understanding synergistic or antagonistic interactions between drugs in combinations.
+
+A web application for calculating MuSyC synergy parameters for combinations is now available! [https://musyc.lolab.xyz/](https://musyc.lolab.xyz/ "Synergy web application")

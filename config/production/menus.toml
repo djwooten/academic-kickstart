@@ -32,6 +32,11 @@
   name = "Talks"
   url = "#talks"
   weight = 50
+  
+[[main]]
+  name = "MuSyC"
+  url = "https://musyc.lolab.xyz/"
+  weight = 1000
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
