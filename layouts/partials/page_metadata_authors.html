@@ -1,18 +1,19 @@
 {{/* Display author list. */}}
 
-{{ $taxonomy := "authors" }}
+{{- $taxonomy := "authors" }}
 {{- $first_asterisks := .Param "first_asterisks" | default 0 -}}  {{/* Used to put asterisks next to equal contributors */}}
 {{- $last_asterisks := .Param "last_asterisks" | default 0 -}}  {{/* Used to put asterisks next to equal contributors */}}
 {{ with .Param $taxonomy }}
 {{- $n_authors := len . -}}
+  {{ $link_authors := site.Params.link_authors | default true }}
   {{ range $index, $value := . }}
     {{- $profile_page := site.GetPage (printf "/%s/%s" $taxonomy (. | urlize)) -}}
     {{- $name := $profile_page.Params.name | default ($value|markdownify) -}}
     {{- if gt $index 0 }}, {{ end -}}
     
     <span itemprop="author name" itemtype="http://schema.org/Person">
-      {{- with $profile_page -}}
-        <a href="{{.RelPermalink}}">{{- if eq $value "admin" -}} <strong> {{- end -}}{{$name}}{{- if eq $name "David J Wooten" -}} </strong> {{- end -}}</a>
+      {{- if and $profile_page $link_authors -}}
+        <a href="{{$profile_page.RelPermalink}}">{{- if eq $value "admin" -}} <strong> {{- end -}}{{$name}}{{- if eq $value "admin" -}} </strong> {{- end -}}</a>
       {{- else -}}
         {{$name}}
       {{- end -}}

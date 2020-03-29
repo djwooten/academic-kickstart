@@ -2,7 +2,7 @@
 title: "A Consensus Framework Unifies Multi-Drug Synergy Metrics"
 date: 2019-01-01
 publishDate: 2019-09-02T23:54:29.240017Z
-authors: [admin, "Christian T Meyer", "Vito Quaranta", "Carlos Lopez"]
+authors: [admin, "Christian T Meyer", "Vito Quaranta", "Carlos F Lopez"]
 
 first_asterisks: 2
 
