@@ -8,9 +8,14 @@ abstract: "Whether patients with glioblastoma that contacts the ventricular-subv
 featured: false
 publication: "*Scientific Reports*"
 doi: "10.1038/s41598-018-37734-w"
+
+url_pdf: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6372607/pdf/41598_2018_Article_37734.pdf"
+
 image:
   caption: ""
   focal_point: ""
   preview_only: false
+  
+
 ---
 

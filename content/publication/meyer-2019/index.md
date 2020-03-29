@@ -14,6 +14,8 @@ tags: ["BRAF-mutant melanoma", "drug synergy", "high-throughput combination drug
 
 doi: "10.1016/j.cels.2019.01.003"
 
+url_pdf: "https://www.cell.com/cell-systems/pdfExtended/S2405-4712(19)30031-6"
+
 image:
   caption: ""
   focal_point: ""

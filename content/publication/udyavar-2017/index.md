@@ -17,6 +17,8 @@ image:
   focal_point: ""
   preview_only: false
   
+  
+url_pdf: "https://cancerres.aacrjournals.org/content/77/5/1063.full-text.pdf"
     
 projects:
  - cancer-control
