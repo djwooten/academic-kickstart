@@ -34,6 +34,11 @@
   weight = 50
   
 [[main]]
+  name = "Software"
+  url = "/software"
+  weight = 60
+
+[[main]]
   name = "MuSyC"
   url = "https://musyc.lolab.xyz/"
   weight = 1000

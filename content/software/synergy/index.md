@@ -9,7 +9,7 @@ categories: []
 date: 2020-04-23T12:00:07-04:00
 
 # Optional external URL for project (replaces project detail page).
-#external_link: "https://pypi.org/project/synergy/"
+external_link: "https://pypi.org/project/synergy/"
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -52,7 +52,14 @@ Using conda
 `not yet`
 
 Using git
-`git clone ...`
+
+```
+git clone git@github.com:djwooten/synergy.git
+cd synergy
+pip install -e .
+```
+
+
 
 ## Example Usage
 
@@ -69,11 +76,11 @@ Initialize a model. I will use the `MuSyC` synergy model to generate data, but i
 E0, E1, E2, E3 = 1, 0.7, 0.4, 0.
 h1, h2 = 2.3, 0.8
 C1, C2 = 1e-2, 1e-1
-oalpha12, oalpha21 = 3.2, 1.1
+alpha12, alpha21 = 3.2, 1.1
 gamma12, gamma21 = 2.5, 0.8
 
 truemodel = MuSyC(E0=E0, E1=E1, E2=E2, E3=E3, h1=h1, h2=h2, C1=C1, C2=C2,	\
-                  oalpha12=oalpha12, oalpha21=oalpha21, gamma12=gamma12, 	\
+                  alpha12=alpha12, alpha21=alpha21, gamma12=gamma12,	 	\
                   gamma21=gamma21)
 ```
 
@@ -132,27 +139,27 @@ model.fit(d1, d2, E_noisy, bootstrap_iterations=100)
 print(model)
 ```
 
-    MuSyC(E0=0.93, E1=0.68, E2=0.42, E3=0.00, h1=1.86, h2=1.12, C1=9.64e-03, C2=1.24e-01, oalpha12=3.75, oalpha21=1.08, beta=0.81, gamma12=2.01, gamma21=0.98)
+    MuSyC(E0=0.93, E1=0.68, E2=0.42, E3=0.00, h1=1.86, h2=1.12, C1=9.64e-03, C2=1.24e-01, alpha12=3.75, alpha21=1.08, beta=0.81, gamma12=2.01, gamma21=0.98)
 
-This prints the lower and upper bound confidence intervals (defaults to 95%) for each parameter.
+This prints the best fit and lower and upper bound confidence intervals (defaults to 95%) for each parameter.
 
 ```python
-print(model.get_parameter_range().T)
+print(model.get_parameters())
 ```
 
-    [[ 0.91223345  0.96329156]
-     [ 0.64643766  0.70749396]
-     [ 0.39022822  0.44990642]
-     [-0.02507603  0.02363363]
-     [ 1.26005438  2.73713318]
-     [ 0.93018994  1.43865508]
-     [ 0.00760803  0.01384544]
-     [ 0.10018859  0.15263104]
-     [ 2.85988609  4.6230902 ]
-     [ 0.73239517  1.79969918]
-     [ 0.69827786  0.95770258]
-     [ 1.44083572  2.76863031]
-     [ 0.56548907  1.83905139]]
+    {'E0': (0.93, [ 0.91223345  0.96329156]),
+     'E1': (0.68, [ 0.64643766  0.70749396]),
+     'E2': (0.42, [ 0.39022822  0.44990642]),
+     'E3': (0.00, [-0.02507603  0.02363363]),
+     'h1': (1.86, [ 1.26005438  2.73713318]),
+     'h2': (1.12, [ 0.93018994  1.43865508]),
+     'C1': (9.64e-03, [ 0.00760803  0.01384544]),
+     'C2': (1.24e-01, [ 0.10018859  0.15263104]),
+     'alpha12': (3.75, [ 2.85988609  4.6230902 ]),
+     'alpha21': (1.08, [ 0.73239517  1.79969918]),
+     'beta': (0.81, [ 0.69827786  0.95770258]),
+     'gamma12': (2.01, [ 1.44083572  2.76863031]),
+     'gamma21': (0.98, [ 0.56548907  1.83905139])}
 
 ### Visualize
 
